@@ -1,5 +1,6 @@
 FROM node:lts-alpine
 ENV NODE_ENV=production
+# ip coneccion BD
 ENV URL_DB_CONNECTION = 'mongodb://172.31.30.79:27017/bookstore'
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
